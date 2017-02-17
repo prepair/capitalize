@@ -1,0 +1,32 @@
+{
+  "name": "@prepair/capitalize",
+  "version": "1.0.0",
+  "description": "Capitalize a string.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js",
+    "lint": "semistandard",
+    "precommit": "npm run lint",
+    "prepush": "npm run test",
+    "release": "git checkout master && git pull origin master && standard-version && git push --follow-tags origin master && npm publish --access=public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prepair/capitalize.git"
+  },
+  "keywords": [
+    "string",
+    "capitalize",
+    "utility"
+  ],
+  "author": "Szabolcs Kurdi <szabolcs.kurdi@gmail.com> (https://github.com/szkrd)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/prepair/capitalize/issues"
+  },
+  "homepage": "https://github.com/prepair/capitalize#readme",
+  "devDependencies": {
+    "semistandard": "9.2.1",
+    "standard-version": "4.0.0"
+  }
+}
