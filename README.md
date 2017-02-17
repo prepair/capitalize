@@ -1,0 +1,2 @@
+# capitalize
+Capitalize a string.
