@@ -15,3 +15,9 @@ import capitalize from '@prepair/capitalize';
 
 console.log(capitalize('foo')); // prints "Foo"
 ```
+
+## caveats
+
+* no specialized error handling
+* no locale support
+* no word uppercase mode

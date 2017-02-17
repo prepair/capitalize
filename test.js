@@ -30,4 +30,8 @@ describe('capitalize', () => {
     }
     assert.ok(err instanceof TypeError);
   });
+
+  it('should not deal with locale accented characters', () => {
+    assert.equal(capitalize('Élet'), 'Élet');
+  });
 });
